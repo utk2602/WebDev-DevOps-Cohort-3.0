@@ -22,7 +22,7 @@ app.get("/ride2"), function(req, res){
 }
 
 
-// app.use(isOldEnoughMiddleware);              agar if isko yaha like toh iske udhr wle routes jo get req kr rhe unpe kam nahi krega woh
+// app.use(isOldEnoughMiddleware) ;              agar if isko yaha like toh iske udhr wle routes jo get req kr rhe unpe kam nahi krega woh
 
 
 app.get("/ride1"), function(req, res){          //// http://localhost:3000/ride2?age=10 aise input krna hai browser pe to get iska output

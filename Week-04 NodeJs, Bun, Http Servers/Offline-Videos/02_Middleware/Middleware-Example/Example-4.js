@@ -33,7 +33,10 @@ app.get("/errorCount", function (req, res) {
 // Error Handling Middleware
 app.use((err, req, res, next) => {
     // send a 404 status code as response to the user if there is an exception in any endpoint 
-    res.status(404).send({});
+    res.status(404).json({
+        msg: "Error Occurred",
+        error: err.message,
+    });
 
     // increment the errorCount variable by 1
     errorCount++;
